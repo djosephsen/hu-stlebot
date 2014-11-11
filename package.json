@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "author": "Dave Josephsen <dave@skeptech.org>",
-  "description": "Hustlebot is here to help",
+  "description": "Hustlebot is here to help members propose new members and keep keep you up to date on existing ones",
   "dependencies": {
     "hubot": "^2.9.3",
     "hubot-diagnostics": "0.0.1",
