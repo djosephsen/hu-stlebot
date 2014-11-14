@@ -16,9 +16,40 @@
 # Author:
 #   Dave Josephsen <dave@skeptech.org> (https://github.com/djosephsen)
 
-replies = require './data/ikr-replies.json'
-triggers = require './data/triggers.json'
-regex = new RegExp triggers.join('|'), 'gi'
+
+replies = [
+  "*I know right?!*",
+  "*OMG* couldn't agree more",
+  ":+1:",
+  "+1",
+  ":arrow_up: THAT",
+  ":arrow_up: you complete me :arrow_up:",
+  "so true",
+  "agreed.",
+  "that's the fact jack",
+  "YUUUUUUP",
+  "that's what I'm talkin bout",
+  "*IKR?!*",
+  "singit",
+  "^droppin the truth bombs :boom: :boom: :boom:",
+  "#legit",
+  "/me nodds emphatically in agreement",
+  "for REALZ though",
+  "it's like you *literally* just read my mind right now",
+  "http://www.gifbin.com/bin/1237811519_chuck-norris-approves.gif"
+]
+
+triggers = [
+  "best.*ev(er|ar)",
+  "so good",
+  "they have the best",
+  "awesome",
+  "OMG.*I love",
+  "(fantastic|wonderful|outstanding|magnificent|brilliant)",
+  "A+"
+]
+
+regex = new RegExp triggers.join('|')
 
 module.exports = (robot) ->
   robot.hear regex, (msg) ->
