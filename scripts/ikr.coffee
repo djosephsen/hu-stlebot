@@ -44,8 +44,9 @@ triggers = [
   "so good",
   "they have the best",
   "awesome",
-  "OMG.*I love",
-  "(fantastic|wonderful|outstanding|magnificent|brilliant)",
+  "I love",
+  "(fantastic|wonderful|outstanding|magnificent|brilliant|genius|amazing)",
+  "(ZOMG|OMG|OMFG)",
   "A+"
 ]
 
