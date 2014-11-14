@@ -47,7 +47,8 @@ triggers = [
   "I love",
   "(fantastic|wonderful|outstanding|magnificent|brilliant|genius|amazing)",
   "(ZOMG|OMG|OMFG)",
-  "A+"
+  "A+",
+  "off the hook"
 ]
 
 regex = new RegExp triggers.join('|')
