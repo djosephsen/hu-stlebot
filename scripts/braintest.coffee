@@ -16,3 +16,7 @@ module.exports = (robot) ->
      robot.brain.set 'foos', currentfoos-1
      currentfoos = robot.brain.get('foos') * 1 or 0
      msg.reply "Ok, now I have #{currentfoos} foos"
+	  
+   robot.respond /dd/i, (msg) ->
+     dump=robot.brain.get('data')
+     msg.reply "you asked for it:  #{dump}"
